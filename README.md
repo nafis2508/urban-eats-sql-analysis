@@ -1,3 +1,4 @@
+````markdown
 # 🍴 SQL Business Analytics & Database Design Project | UrbanEats Café Chain
 
 ## 📌 Project Overview
@@ -45,26 +46,26 @@ urban-eats-sql-analysis/
 ├── .gitignore
 │
 ├── assets/
-│   ├── diagrams/
-│   │   └── urban_eats_erd_diagram.png
-│   │
-│   └── screenshots/
-│       ├── revenue_by_product_category.png
-│       ├── total_revenue_by_outlet.png
-│       ├── loyal_vs_onetimer_customers.png
-│       ├── failed_payment_and_churn_analysis.png
-│       ├── underperforming_categories_analysis.png
-│       ├── product_sales_by_outlet.png
-│       ├── shift_utilisation_analysis.png
-│       ├── staff_capacity_by_outlet.png
-│       ├── role_group_demand_analysis.png
-│       ├── available_products_by_outlet.png
-│       ├── reservation_reliability_analysis.png
-│       └── order_to_revenue_flow_analysis.png
+│   ├── available_products_by_outlet.png
+│   ├── failed_payment_and_churn_analysis.png
+│   ├── loyal_vs_onetimer_customers.png
+│   ├── order_to_revenue_flow_analysis.png
+│   ├── product_sales_by_outlet.png
+│   ├── reservation_reliability_analysis.png
+│   ├── revenue_by_product_category.png
+│   ├── role_group_demand_analysis.png
+│   ├── shift_utilisation_analysis.png
+│   ├── staff_capacity_by_outlet.png
+│   ├── total_revenue_by_outlet.png
+│   ├── underperforming_categories_analysis.png
+│   └── urban_eats_erd.pdf
+│
+├── diagrams/
+│   └── urban_eats_erd.pdf
 │
 ├── reports/
-│   ├── urban_eats_business_report.docx
-│   └── urban_eats_business_report.pdf
+│   ├── urban_eats_report.docx
+│   └── urban_eats_report.pdf
 │
 ├── sql/
 │   ├── schema/
@@ -77,14 +78,13 @@ urban-eats-sql-analysis/
 │       └── business_case_analysis.sql
 │
 └── data/
-    └── README.md
-```
+````
 
 ---
 
 # 🗃️ Simulated Operational Dataset
 
-The project uses a synthetic but business-realistic dataset simulating day-to-day café operations across multiple outlets.
+The project uses a synthetic but business realistic dataset simulating day to day café operations across multiple outlets.
 
 The dataset includes:
 
@@ -99,19 +99,19 @@ The dataset includes:
 
 The operational data was intentionally designed to simulate:
 
-* repeat vs one-time customers
-* customer churn signals
-* failed and refunded payments
-* reservation no-shows
-* staffing inefficiencies
-* branch-specific menu strategies
-* operational bottlenecks
+* Repeat vs one time customers
+* Customer churn signals
+* Failed and refunded payments
+* Reservation no shows
+* Staffing inefficiencies
+* Branch specific menu strategies
+* Operational bottlenecks
 
 ---
 
 # 🧠 Database Design & ERD
 
-The relational database schema was designed using proper entity relationships, primary keys, foreign keys, and many-to-many junction tables.
+The relational database schema was designed using proper entity relationships, primary keys, foreign keys, and many to many junction tables.
 
 ### Core Entities
 
@@ -135,9 +135,11 @@ The schema supports both transactional processing and business analytics reporti
 
 ---
 
-# 🧩 ERD (Entity Relationship Diagram)
+# 🧩 Entity Relationship Diagram (ERD)
 
-![ERD](assets/diagrams/urban_eats_erd_diagram.png)
+<p align="center">
+  <img src="assets/urban_eats_erd.pdf" width="850"/>
+</p>
 
 ---
 
@@ -152,11 +154,11 @@ This project demonstrates practical SQL analytics and database engineering conce
 * Revenue calculations
 * Customer segmentation
 * Operational KPI analysis
-* Many-to-many relationship modelling
+* Many to many relationship modelling
 * Foreign key constraints
 * Relational schema design
 * Business rule implementation
-* Business-focused SQL reporting
+* Business focused SQL reporting
 * Query optimisation logic
 
 ---
@@ -193,15 +195,19 @@ Analyse revenue contribution across outlets and product categories to identify p
 * Urban Eats Central generated the highest overall revenue with balanced sales across meals, beverages, and desserts.
 * Harbour performed strongly through its niche strategy focused on cold drinks and desserts.
 * Campus significantly underperformed due to high cancellation rates and limited product diversity.
-* Espresso-based products showed low profitability contribution compared to higher-ticket meal categories.
+* Espresso based products showed low profitability contribution compared to higher ticket meal categories.
 
 ## Revenue by Product Category
 
-![Revenue by Product Category](assets/screenshots/revenue_by_product_category.png)
+<p align="center">
+  <img src="assets/revenue_by_product_category.png" width="850"/>
+</p>
 
 ## Revenue by Outlet
 
-![Revenue by Outlet](assets/screenshots/total_revenue_by_outlet.png)
+<p align="center">
+  <img src="assets/total_revenue_by_outlet.png" width="850"/>
+</p>
 
 ---
 
@@ -214,17 +220,21 @@ Evaluate customer loyalty, churn risk, reservation reliability, and payment beha
 ## Key Insights
 
 * Customer loyalty exists but is concentrated within limited product categories.
-* Failed and refunded payments strongly overlap with reservation no-shows.
-* Harbour achieved the strongest reservation-to-order conversion rates.
+* Failed and refunded payments strongly overlap with reservation no shows.
+* Harbour achieved the strongest reservation to order conversion rates.
 * Campus demonstrated poor customer reliability and retention performance.
 
-## Loyal vs One-Time Customers
+## Loyal vs One Time Customers
 
-![Customer Retention](assets/screenshots/loyal_vs_onetimer_customers.png)
+<p align="center">
+  <img src="assets/loyal_vs_onetimer_customers.png" width="850"/>
+</p>
 
 ## Failed Payment & Churn Analysis
 
-![Failed Payments](assets/screenshots/failed_payment_and_churn_analysis.png)
+<p align="center">
+  <img src="assets/failed_payment_and_churn_analysis.png" width="850"/>
+</p>
 
 ---
 
@@ -232,7 +242,7 @@ Evaluate customer loyalty, churn risk, reservation reliability, and payment beha
 
 ## Focus
 
-Identify underperforming menu items and evaluate outlet-level sales distribution.
+Identify underperforming menu items and evaluate outlet level sales distribution.
 
 ## Key Insights
 
@@ -243,11 +253,15 @@ Identify underperforming menu items and evaluate outlet-level sales distribution
 
 ## Underperforming Categories
 
-![Menu Optimisation](assets/screenshots/underperforming_categories_analysis.png)
+<p align="center">
+  <img src="assets/underperforming_categories_analysis.png" width="850"/>
+</p>
 
 ## Product Sales by Outlet
 
-![Product Sales](assets/screenshots/product_sales_by_outlet.png)
+<p align="center">
+  <img src="assets/product_sales_by_outlet.png" width="850"/>
+</p>
 
 ---
 
@@ -260,29 +274,35 @@ Assess staffing efficiency, shift utilisation, and role allocation across outlet
 ## Key Insights
 
 * Central maintained balanced staffing coverage but showed signs of occasional overstaffing.
-* Harbour required stronger barista allocation due to beverage-heavy demand.
-* Campus suffered from under-utilised staffing and unstaffed shifts.
+* Harbour required stronger barista allocation due to beverage heavy demand.
+* Campus suffered from under utilised staffing and unstaffed shifts.
 * Several staffing gaps directly impacted service reliability and revenue generation.
 
 ## Shift Utilisation Analysis
 
-![Shift Utilisation](assets/screenshots/shift_utilisation_analysis.png)
+<p align="center">
+  <img src="assets/shift_utilisation_analysis.png" width="850"/>
+</p>
 
 ## Staff Capacity by Outlet
 
-![Staff Capacity](assets/screenshots/staff_capacity_by_outlet.png)
+<p align="center">
+  <img src="assets/staff_capacity_by_outlet.png" width="850"/>
+</p>
 
 ## Role Group Demand Analysis
 
-![Role Group Demand](assets/screenshots/role_group_demand_analysis.png)
+<p align="center">
+  <img src="assets/role_group_demand_analysis.png" width="850"/>
+</p>
 
 ---
 
-# 5️⃣ Branch-Level Operational Efficiency
+# 5️⃣ Branch Level Operational Efficiency
 
 ## Focus
 
-Evaluate operational reliability using menu availability, reservation conversion, and end-to-end revenue flow.
+Evaluate operational reliability using menu availability, reservation conversion, and end to end revenue flow.
 
 ## Key Insights
 
@@ -293,15 +313,21 @@ Evaluate operational reliability using menu availability, reservation conversion
 
 ## Product Availability by Outlet
 
-![Product Availability](assets/screenshots/available_products_by_outlet.png)
+<p align="center">
+  <img src="assets/available_products_by_outlet.png" width="850"/>
+</p>
 
 ## Reservation Reliability Analysis
 
-![Reservation Reliability](assets/screenshots/reservation_reliability_analysis.png)
+<p align="center">
+  <img src="assets/reservation_reliability_analysis.png" width="850"/>
+</p>
 
-## Order-to-Revenue Flow Analysis
+## Order to Revenue Flow Analysis
 
-![Order to Revenue Flow](assets/screenshots/order_to_revenue_flow_analysis.png)
+<p align="center">
+  <img src="assets/order_to_revenue_flow_analysis.png" width="850"/>
+</p>
 
 ---
 
@@ -309,7 +335,7 @@ Evaluate operational reliability using menu availability, reservation conversion
 
 This project demonstrates how SQL analytics and relational databases can support:
 
-* Operational decision-making
+* Operational decision making
 * Revenue optimisation
 * Customer retention strategy
 * Workforce planning
@@ -383,9 +409,9 @@ Through this project, I strengthened my skills in:
 * Operational KPI analysis
 * Customer behaviour analysis
 * Data modelling
-* Business-focused reporting
+* Business focused reporting
 * Translating business problems into SQL solutions
-* Designing analytical workflows for operational decision-making
+* Designing analytical workflows for operational decision making
 
 ---
 
@@ -400,25 +426,25 @@ Potential future improvements include:
 * Automated reporting pipelines
 * Cloud deployment using AWS RDS or Azure SQL
 * Stored procedures and triggers
-* Real-time operational monitoring
+* Real time operational monitoring
 
 ---
 
 # 📑 Conclusion
 
-UrbanEats demonstrates how relational databases and SQL analytics can be used to solve real-world operational and commercial business problems.
+UrbanEats demonstrates how relational databases and SQL analytics can be used to solve real world operational and commercial business problems.
 
 The project successfully combines:
 
-* database engineering
+* Database engineering
 * SQL analytics
-* business intelligence
-* operational analytics
-* and strategic business recommendations
+* Business intelligence
+* Operational analytics
+* Strategic business recommendations
 
 The analysis highlights clear operational differences between branches while providing actionable insights for improving profitability, staffing efficiency, customer retention, and service reliability.
 
-This project reflects a practical, business-focused approach to data analytics and demonstrates industry-relevant SQL and database skills applicable to retail, hospitality, and operational analytics environments.
+This project reflects a practical, business focused approach to data analytics and demonstrates industry relevant SQL and database skills applicable to retail, hospitality, and operational analytics environments.
 
 ---
 
@@ -439,10 +465,13 @@ Business Analytics graduate with a Computer Science and Engineering background s
 * Data Visualisation
 * Business Reporting
 
-GitHub: https://github.com/nafis2508
+GitHub: [https://github.com/nafis2508](https://github.com/nafis2508)
 
 ---
 
 # 📜 License
 
 This project is licensed under the MIT License.
+
+```
+```
