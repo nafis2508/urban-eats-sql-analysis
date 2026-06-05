@@ -1,4 +1,3 @@
-````markdown
 # 🍴 SQL Business Analytics & Database Design Project | UrbanEats Café Chain
 
 ## 📌 Project Overview
@@ -473,5 +472,3 @@ GitHub: [https://github.com/nafis2508](https://github.com/nafis2508)
 
 This project is licensed under the MIT License.
 
-```
-```
