@@ -1,4 +1,4 @@
-# 🍴 SQL Business Analytics & Database Design Project | UrbanEats Café Chain
+# 🍴 SQL Business Analytics & Database Design Project | UrbanEats Cafe Chain
 
 ## 📌 Project Overview
 
